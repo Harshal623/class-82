@@ -25,8 +25,7 @@ function my_mousemove(e){
         ctx.beginPath()
         ctx.strokeStyle = color
         ctx.lineWidth = line_width
-        ctx.moveTo(last_x, last_y)
-        ctx.lineTo(current_x, current_y)
+        ctx.arc(current_x, current_y, 30, 0 , 2 * Math.PI)
         ctx.stroke()
     }
     last_x = current_x
